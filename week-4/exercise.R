@@ -25,10 +25,11 @@ team <- arrange(team, turnovers)
 # Team and TRB  *using one line of code*
 sub_team <- select(filter(team, TRB == max(TRB)),Team,TRB)
 
+
 # Print only the name of the team that had the highest total rebounds
 # (that also happens to be the greatest team of all time)
 
-print(select(sub_team, Team))
+print(sub_team$Team)
 
 ## Let's change gears!
 
